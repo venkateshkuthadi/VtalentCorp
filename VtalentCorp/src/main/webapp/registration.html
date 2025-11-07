@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+        }
+        .form-container {
+            background: white;
+            width: 400px;
+            margin: 60px auto;
+            padding: 25px 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 25px;
+        }
+        label {
+            display: block;
+            margin-top: 12px;
+            color: #444;
+            font-weight: bold;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 6px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            margin-top: 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Employee Registration</h2>
+    <form action="RegistrationServlet" method="post">
+        
+        <label for="eid">Employee ID:</label>
+        <input type="text" id="eid" name="eid" required>
+
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <label for="designation">Designation:</label>
+        <select id="designation" name="designation" required>
+            <option value="">-- Select Designation --</option>
+            <option value="React Developer">React Developer</option>
+            <option value="Java Full Stack Developer">Java Full Stack Developer</option>
+            <option value="Tester">Tester</option>
+            <option value="Angular Developer">Angular Developer</option>
+            <option value="Database Administrator">Database Administrator</option>
+            <option value="Python Developer">Python Developer</option>
+        </select>
+
+        <label for="dateofjoining">Date of Joining:</label>
+        <input type="date" id="dateofjoining" name="dateofjoining" min="1990-01-01" max="2010-12-31" required>
+
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="3" required></textarea>
+
+        <input type="submit" value="Register">
+    </form>
+</div>
+
+</body>
+</html>

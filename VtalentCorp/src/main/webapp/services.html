@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Our Services</title>
+    <style>
+        body {
+            margin: 0;
+            background-image: url('bgimage.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+        }
+        
+
+        h1 {
+            text-align: center;
+            color:black;
+            margin: 30px 0;
+        }
+
+        #mai {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            justify-content: center;
+            padding: 30px;
+        }
+
+        .boxes {
+            background-color: black;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .boxes:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+            background-color: rgb(0, 255, 26);
+        }
+
+        .boxes img {
+            width: 100%;
+            height: 250px;
+            object-fit: contain; 
+        }
+        .boxes:hover .content h3,
+.boxes:hover .content p {
+    color: black; 
+    }
+
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .content h3 {
+            margin: 10px 0;
+            color:white;
+        }
+        a{
+        text-decoration:none;
+        }
+        content a:hover
+        {
+        color:red;
+        background-color:yellow;
+        }
+
+        .content p {
+            color:white;
+            font-size: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Services</h1>
+<pre style="text-align: center;">
+    <h2>
+Looking for modern software solutions for your organization? 
+VTalent has the tools to make your life easier. 
+We’re always in pursuit of new ways to help our clients outsmart the competition,
+ so they can continue giving the best service to their customers. 
+ That means exploring new solutions and discovering innovative technology.
+  From making better connections in the digital world to boosting your business's digital competence,
+   here are the latest digital trends worth exploring with us</h2>
+</pre>
+
+    <div id="mai">
+        <div class="boxes">
+            <img src="Dataanalyticsandinsights.jpg" alt="Analytics">
+            <div class="content">
+                <h3>Analytics and Insights</h3>
+                
+                <p>Without analytics, data is meaningless. Analytics is the process of interpreting data and identifying significant patterns. There is great potential hidden in those massive data sets, but applications and other businesses are unable to uncover that value without the assistance of analytics.
+Analytical insights are incredibly powerful and can be used to grow your business while identifying areas of opportunity.</p>
+                <a class="link" href="analytics.html" >More Info</a>
+            </div>
+        </div>
+
+        <div class="boxes">
+            <img src="enterprise.jpeg" alt="Enterprise">
+            <div class="content">
+                <h3>Enterprise Applications</h3>
+                <p>An enterprise application (EA) is a large software system platform designed to operate in a corporate environment such as business or government. EA software is a critical component of any computer-based information system.
+Enterprise Applications software ultimately enhances efficiency and productivity through business level support functionality.</p>
+                                <a class="link" href="Enterpriseapplications.html" >More Info</a>
+                
+            </div>
+        </div>
+        <div class="boxes">
+            <img src="sd.png" alt="Software Development">
+            <div class="content">
+                <h3>Software Development</h3>
+                <p>Includes all processes from the conception of the desired software through to the final manifestation of the software, typically in a planned and structured process.
+Software Development also includes research, new development, prototyping, modification, reuse, re-engineering, maintenance, or any other activities that result in software products.</p>
+                                <a class="link" href="SoftwareDevolepement.html" >More Info</a>
+            </div>
+        </div>
+
+        <div class="boxes">
+            <img src="digital.jpeg" alt="digital">
+            <div class="content">
+                <h3>Digital Engineering</h3>
+                <p>Digital engineering is the practice in which new applications are conceived and delivered. Encompassing the methodologies, utility, and process of creating new digital products end to end, digital engineering leverages data and technology to produce improvements to applications—or even entirely new solutions.</p>
+                                <a class="link" href="DigitalEngineering.html" >More Info</a>
+                
+            </div>
+        </div>
+   <div class="boxes">
+            <img src="infra.jpg" alt="Infrastructure">
+            <div class="content">
+                <h3>Infrastructure Management</h3>
+                <p>Infrastructure management service is about administering and managing technology, information and data in a proactive way. Its scope ranges from the desktop to networking, storage, data, security and cloud-based services - not forgetting the people employed to keep everything working.</p>
+                                <a class="link" href="InfrastructureManagement.html" >More Info</a>
+                
+            </div>
+        </div>
+        <div class="boxes">
+            <img src="staff.jpeg" alt="Staff">
+            <div class="content">
+                <h3>Consulting & Staffing</h3>
+                <p>If you’re looking to build your organizational structure and technical infrastructure, VTalent can help. We offer contract, contract to hire and permanent IT staffing services. Our areas of expertise include the below list of technologies and job titles.</p>
+                                <a class="link" href="ConsultingStaffing.html" >More Info</a>
+                
+            </div>
+        </div>
+
+     
+
+        
+    </div>
+</body>
+</html>
